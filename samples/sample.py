@@ -1,4 +1,4 @@
-from pyfire import Firebase
+from pyfirebase import Firebase
 
 firebase = Firebase('https://apitest-72809.firebaseio.com/')
 
@@ -11,8 +11,8 @@ books = ref.get()
 # Payload data can be declared using native python data types
 payload = {'name': 'Harry Potter and the Prisoner of Azkaban', 'pages': 780}
 
-# The add operation pushes a new node under this node
-book = ref.add(payload)
+# The push operation pushes a new node under this node
+book = ref.push(payload)
 
 # We can get the new node id using the name key
 id = book['name']

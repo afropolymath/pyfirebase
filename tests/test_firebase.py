@@ -1,7 +1,7 @@
 import mock
 from mock import MagicMock
 from unittest import TestCase
-from pyfire import Firebase, FirebaseReference
+from pyfirebase import Firebase, FirebaseReference
 
 TEST_FIREBASE_URL = 'https://samplechat.firebaseio-demo.com'
 
