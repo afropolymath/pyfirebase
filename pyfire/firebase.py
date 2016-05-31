@@ -1,6 +1,5 @@
 import re
 import requests
-import validators
 
 
 class FirebaseReference(object):
@@ -68,11 +67,10 @@ class Firebase(object):
 
     @staticmethod
     def is_valid_firebase_url(url):
-        if validators.url(url):
-            pattern = re.compile('.+firebaseio(-demo)?\.com$')
-            matches = pattern.match(url)
-            if matches:
-                return True
+        pattern = re.compile('^https://[a-zA-Z0-9]+\.firebaseio(-demo)?\.com$')
+        matches = pattern.match(url)
+        if matches:
+            return True
         return False
 
     def ref(self, reference):

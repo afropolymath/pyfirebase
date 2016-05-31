@@ -29,6 +29,6 @@ setup(name='python-fire',
       packages=['pyfire'],
       test_suite='tests.all_tests',
       tests_require=['nose'],
-      install_requires=['requests>=2.10.0', 'mock', 'validator'],
+      install_requires=['requests>=2.10.0', 'mock'],
       zip_safe=False,
       )
