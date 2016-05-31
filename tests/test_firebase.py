@@ -41,14 +41,14 @@ class TestFirebase(TestCase):
         node_ref = self.firebase.ref('test_ref')
         result = node_ref.set('val')
         self.assertTrue(mock_requests_put.called)
-        mock_requests_put.assert_called_with(node_ref.current_url, data='val')
+        mock_requests_put.assert_called_with(node_ref.current_url, json='val')
 
     @mock.patch('requests.post')
-    def test_add_event(self, mock_requests_post):
+    def test_push_event(self, mock_requests_post):
         node_ref = self.firebase.ref('test_ref')
-        result = node_ref.add('val')
+        result = node_ref.push('val')
         self.assertTrue(mock_requests_post.called)
-        mock_requests_post.assert_called_with(node_ref.current_url, data='val')
+        mock_requests_post.assert_called_with(node_ref.current_url, json='val')
 
     @mock.patch('requests.delete')
     def test_delete_event(self, mock_requests_delete):
