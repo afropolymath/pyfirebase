@@ -1,11 +1,11 @@
-# PyFire
+# PyFirebase
 [![Build Status](https://travis-ci.org/andela-cnnadi/python-fire.svg?branch=master)](https://travis-ci.org/andela-cnnadi/python-fire) [![Coverage Status](https://coveralls.io/repos/github/andela-cnnadi/python-fire/badge.svg?branch=master)](https://coveralls.io/github/andela-cnnadi/python-fire?branch=master)
 
 Easy to use Firebase Python Plugin. Built as a wrapper around the Firebase REST HTTP API. Syntax is reminiscent of the simple syntax available in Javascript. Inspired by the [python-firebase](https://github.com/ozgur/python-firebase) library by [ozgur](https://github.com/ozgur).
 
 ## Installation
 
-Get started using the PyFire library by installing it:
+Get started using the PyFirebase library by installing it:
 
 ```
 pip install pyfire
@@ -13,10 +13,10 @@ pip install pyfire
 
 ## Usage
 
-Using the PyFire library is extremely easy. This is a sample books library built with it.
+Using the PyFirebase library is extremely easy. This is a sample books library built with it.
 
 ```py
-from pyfire import Firebase
+from pyfirebase import Firebase
 
 firebase = Firebase(YOUR_FIREBASE_URL)
 
