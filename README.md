@@ -8,7 +8,7 @@ Easy to use Firebase Python Plugin. Built as a wrapper around the Firebase REST 
 Get started using the PyFirebase library by installing it:
 
 ```
-pip install pyfire
+pip install pyfirebase
 ```
 
 ## Usage
