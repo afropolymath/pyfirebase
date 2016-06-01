@@ -8,7 +8,6 @@ class FirebaseReference(object):
         if len(args) == 2:
             connector = args[0]
             if isinstance(connector, Firebase):
-                print args
                 if FirebaseReference.is_valid(args[1]):
                     return super(FirebaseReference, cls).__new__(cls)
         return None
