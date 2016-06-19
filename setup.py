@@ -8,7 +8,7 @@ except ImportError:
 
 
 setup(name='pyfirebase',
-      version='1.2',
+      version='1.3',
       description="Firebase Python Plugin",
       long_description="Built as an improvement on the python-firebase package built by ozgur",
       classifiers=[
