@@ -53,6 +53,28 @@ bookref.child('pages').set(790)
 
 # We can delete the book once we're done
 bookref.delete()
+
+# Create a reference to the root by not passing in paramters to the ref function
+root = firebase.ref()
+
+# This function will be called everytime an event happens
+def print_data(event, data):
+    print event
+    print data
+
+# We can the event listener to the root ref. We also specify that print_data should be called on event
+root.on('child_changed', callback=print_data)
+
+
+# Extra logic to turn on listener when we quit
+def signal_handler(signal, frame):
+    print "Trying to exit"
+    root.off()
+    sys.exit(0)
+
+# Binding Ctrl + C signal to signal_handler
+signal.signal(signal.SIGINT, signal_handler)
+signal.pause()
 ```
 
 ### `Firebase` Methods
@@ -116,11 +138,37 @@ This method deletes the ref.
 ref.delete()
 ```
 
+### Streaming Methods
+
+#### `on(event_name, callback=callback_func)`
+
+Called on `FirebaseReference` objects. This method adds a new event listener to the ref. The `callback_func` is called every time the event specified by `event_name` happens.
+
+Currently supported events are `child_changed` and `child_deleted`.
+
+```py
+# Simple function to print event and data passed in by the on function
+print_data(event, data):
+  print event
+  print data
+
+ref.on('child_changed', callback=print_data)
+```
+
+#### `off()`
+
+This method stops listening on all events for this ref.
+
+```py
+ref.off()
+```
+
 ## TODO
 
 Some of the pending functionality that needs to be implemented include:
 
 - Authentication
-- Streaming API
+- Support more events on Streaming API
+- Result Filtering
 - Priority
 - Server Values
