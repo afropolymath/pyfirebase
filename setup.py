@@ -29,6 +29,6 @@ setup(name='pyfirebase',
       packages=['pyfirebase'],
       test_suite='tests',
       tests_require=['pytest'],
-      install_requires=['requests>=2.10.0', 'mock'],
+      install_requires=['requests>=2.10.0', 'mock', 'sseclient'],
       zip_safe=False,
       )
