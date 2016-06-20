@@ -1,6 +1,6 @@
 # PyFirebase
-[![Build Status](https://travis-ci.org/andela-cnnadi/pyfirebase.svg?branch=master)](https://travis-ci.org/andela-cnnadi/python-fire)
-[![Coverage Status](https://coveralls.io/repos/github/andela-cnnadi/python-fire/badge.svg?branch=master)](https://coveralls.io/github/andela-cnnadi/pyfirebase?branch=master)
+[![Build Status](https://travis-ci.org/andela-cnnadi/pyfirebase.svg?branch=master)](https://travis-ci.org/andela-cnnadi/pyfirebase)
+[![Coverage Status](https://coveralls.io/repos/github/andela-cnnadi/pyfirebase/badge.svg?branch=master)](https://coveralls.io/github/andela-cnnadi/pyfirebase?branch=master)
 [![PyPI](https://img.shields.io/pypi/v/pyfirebase.svg?maxAge=2592000)]()
 [![PyPI](https://img.shields.io/pypi/l/pyfirebase.svg?maxAge=2592000)]()
 [![PyPI](https://img.shields.io/pypi/dd/pyfirebase.svg?maxAge=2592000)]()
