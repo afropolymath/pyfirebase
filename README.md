@@ -3,7 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/andela-cnnadi/pyfirebase/badge.svg?branch=master)](https://coveralls.io/github/andela-cnnadi/pyfirebase?branch=master)
 [![PyPI](https://img.shields.io/pypi/v/pyfirebase.svg?maxAge=2592000)]()
 [![PyPI](https://img.shields.io/pypi/l/pyfirebase.svg?maxAge=2592000)]()
-[![PyPI](https://img.shields.io/pypi/dd/pyfirebase.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/dm/pyfirebase.svg?maxAge=2592000)]()
 
 Easy to use Firebase Python Plugin. Built as a wrapper around the Firebase REST HTTP API. Syntax is reminiscent of the simple syntax available in Javascript. Inspired by the [python-firebase](https://github.com/ozgur/python-firebase) library by [ozgur](https://github.com/ozgur).
 
